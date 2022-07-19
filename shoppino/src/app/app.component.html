@@ -1,7 +1,28 @@
 <app-top-bar></app-top-bar>
 
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="tutto">
+
+
+  <ul *ngFor="let i of vettore">
+    <div *ngIf= "i>8">
+     {{i}}
+    </div>
+
+
+  </ul>
+  <p>ciao</p>
+
+
+<app-spese></app-spese>
+<app-vendite></app-vendite>
+<app-gestione [venditina]="vendita" [spesa]="spesa">
+
+</app-gestione>
+
+
+  
+</div>
 </div>
 
 <!-- 

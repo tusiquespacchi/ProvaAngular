@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
-
-  
+vendita: number = 15;
+spesa: number = 10;
+controllo: number = 5;
+vettore: number[] = [1,3,4,56,7,33]
 }
 
 /*
