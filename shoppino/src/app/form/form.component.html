@@ -1,18 +1,31 @@
-<p>form di prova</p>
+<h3>COSTI</h3>
 <div>
+   
 <form (ngSubmit)="send()" [formGroup]="form">
-   <input class="form-control" type="text" placeholder="Guadagni" formControlName="numerouno">
-   <input class="form-control" type="email" placeholder="Spese" formControlName="numerodue">
-   <input class="form-control" type="date" placeholder="Data di nascita" formControlName="date">
-   <input type="submit" value="Invia">
+   <input class="form-control" type="number" placeholder="Affitto GEN-APR" formControlName="numerouno">
+   <input class="form-control" type="number" placeholder="Affitto MAG-AGO" formControlName="numerodue">
+   <input class="form-control" type="number" placeholder="Affitto SET-DIC" formControlName="numerotre">
+   <br>
+   <input class="form-control" type="number" placeholder="Utenze GEN-APR" formControlName="numeroquattro">
+   <input class="form-control" type="number" placeholder="Utenze MAG-AGO" formControlName="numerocinque">
+   <input class="form-control" type="number" placeholder="Utenze SET-DIC" formControlName="numerosei">
+   <input type="submit" value="Invia"> <br>
+
+   <input class="form-control" type="number" placeholder="Web/telefono GEN-APR" formControlName="numerosette">
+   <input class="form-control" type="number" placeholder="Web/telefono MAG-AGO" formControlName="numerootto">
+   <input class="form-control" type="number" placeholder="Web/telefono SET-DIC" formControlName="numeronove">
+   <br>  
+   <input class="form-control" type="number" placeholder="sucerity GEN-APR" formControlName="numerodieci">
+   <input class="form-control" type="number" placeholder="security MAG-AGO" formControlName="numeroundici">
+   <input class="form-control" type="number" placeholder="security SET-DIC" formControlName="numerododici">
+  
+   
 </form>
 
-<p> Guadagni</p>
-{{campouno ==0 ? 'Inserisci un valore' :campouno}}
-<p> Spese </p>
-{{campodue ==0 ? 'Inserisci un valore' :campodue}}
-<p> Netto </p>
-{{risultato ==0 ? 'Inserisci un valore' :risultato}}
+
+
+<p> Totale spese </p>
+{{totalespese ==0 ? 'Inserisci un valore' :totalespese}}
 
 </div>
  
