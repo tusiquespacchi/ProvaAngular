@@ -1,0 +1,18 @@
+<p>form di prova</p>
+<div>
+<form (ngSubmit)="send()" [formGroup]="form">
+   <input class="form-control" type="text" placeholder="Guadagni" formControlName="numerouno">
+   <input class="form-control" type="email" placeholder="Spese" formControlName="numerodue">
+   <input class="form-control" type="date" placeholder="Data di nascita" formControlName="date">
+   <input type="submit" value="Invia">
+</form>
+
+<p> Guadagni</p>
+{{campouno ==0 ? 'Inserisci un valore' :campouno}}
+<p> Spese </p>
+{{campodue ==0 ? 'Inserisci un valore' :campodue}}
+<p> Netto </p>
+{{risultato ==0 ? 'Inserisci un valore' :risultato}}
+
+</div>
+ 

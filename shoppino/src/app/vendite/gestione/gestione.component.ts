@@ -10,8 +10,10 @@ export class GestioneComponent implements OnInit {
   @Input() venditina: number = 5; 
   @Input() spesa: number = 1;
   @Input() mensile: number = 1;
-  risultato: number = 0;
+  nuovavendita: number = 10;
+  nuovaspesa: number = 5;
 
+  risultato: number = 0;
   
   onSubmit(): void {
     // Process checkout data here
@@ -24,4 +26,8 @@ export class GestioneComponent implements OnInit {
     
   }
 
+  calcola(vendita:number,spesa:number) :number{
+    
+    return vendita-spesa;
+  }
 }

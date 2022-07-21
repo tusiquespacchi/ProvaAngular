@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -17,11 +17,15 @@ import { SpeseComponent } from './spese/spese.component';
 import { VenditeComponent } from './vendite/vendite.component';
 
 import { GestioneComponent } from './vendite/gestione/gestione.component';
+import { BottonesommaComponent } from './bottonesomma/bottonesomma.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([{ path: '', component: ProductListComponent },
     { path: 'products/:productId', component: ProdutDetailsComponent },
@@ -41,6 +45,8 @@ import { GestioneComponent } from './vendite/gestione/gestione.component';
     VenditeComponent,
     
     GestioneComponent,
+          BottonesommaComponent,
+          FormComponent,
   ],
   bootstrap: [AppComponent],
 })
