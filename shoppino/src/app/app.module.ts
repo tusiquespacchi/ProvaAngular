@@ -21,6 +21,7 @@ import { BottonesommaComponent } from './bottonesomma/bottonesomma.component';
 import { FormComponent } from './form/form.component';
 import { RicaviComponent } from './ricavi/ricavi.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,6 +29,7 @@ import { RicaviComponent } from './ricavi/ricavi.component';
     ReactiveFormsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([{ path: '', component: ProductListComponent },
     { path: 'products/:productId', component: ProdutDetailsComponent },
     { path: 'cart', component: CartComponent },
