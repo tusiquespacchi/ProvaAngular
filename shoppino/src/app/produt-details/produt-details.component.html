@@ -1,6 +1,7 @@
 <h2>Product Details</h2>
 
 <div *ngIf="product">
+  <app-top-bar></app-top-bar>
   <h3>{{ product.name | uppercase }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>

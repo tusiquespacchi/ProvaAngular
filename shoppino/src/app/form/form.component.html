@@ -1,0 +1,35 @@
+<h3>COSTI</h3>
+<div>
+   
+<form (ngSubmit)="send()" [formGroup]="form">
+   <h2>Affitto</h2>
+   <input class="form-control" type="number" placeholder="GEN-APR" formControlName="numerouno">
+   <input class="form-control" type="number" placeholder="MAG-AGO" formControlName="numerodue">
+   <input class="form-control" type="number" placeholder="SET-DIC" formControlName="numerotre">
+   <br>
+   <h2>Utenze</h2>
+   <input class="form-control" type="number" placeholder="UGEN-APR" formControlName="numeroquattro">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numerocinque">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numerosei">
+   <br>
+   <h2>Web/telefono</h2>
+   <input class="form-control" type="number" placeholder=" GEN-APR" formControlName="numerosette">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numerootto">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numeronove">
+   <br>  
+   <h2>Security</h2>
+   <input class="form-control" type="number" placeholder=" GEN-APR" formControlName="numerodieci">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numeroundici">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numerododici">
+   <br>
+   <input type="submit" value="Invia"> 
+   
+</form>
+
+
+
+<H3>TOTALE SPESE</H3>
+{{totalespese ==0 ? 'Inserisci un valore' :totalespese}}
+
+</div>
+ 
