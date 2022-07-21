@@ -19,6 +19,7 @@ import { VenditeComponent } from './vendite/vendite.component';
 import { GestioneComponent } from './vendite/gestione/gestione.component';
 import { BottonesommaComponent } from './bottonesomma/bottonesomma.component';
 import { FormComponent } from './form/form.component';
+import { RicaviComponent } from './ricavi/ricavi.component';
 
 @NgModule({
   imports: [
@@ -47,6 +48,7 @@ import { FormComponent } from './form/form.component';
     GestioneComponent,
           BottonesommaComponent,
           FormComponent,
+          RicaviComponent,
   ],
   bootstrap: [AppComponent],
 })

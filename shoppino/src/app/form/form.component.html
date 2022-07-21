@@ -2,29 +2,33 @@
 <div>
    
 <form (ngSubmit)="send()" [formGroup]="form">
-   <input class="form-control" type="number" placeholder="Affitto GEN-APR" formControlName="numerouno">
-   <input class="form-control" type="number" placeholder="Affitto MAG-AGO" formControlName="numerodue">
-   <input class="form-control" type="number" placeholder="Affitto SET-DIC" formControlName="numerotre">
+   <h2>Affitto</h2>
+   <input class="form-control" type="number" placeholder="GEN-APR" formControlName="numerouno">
+   <input class="form-control" type="number" placeholder="MAG-AGO" formControlName="numerodue">
+   <input class="form-control" type="number" placeholder="SET-DIC" formControlName="numerotre">
    <br>
-   <input class="form-control" type="number" placeholder="Utenze GEN-APR" formControlName="numeroquattro">
-   <input class="form-control" type="number" placeholder="Utenze MAG-AGO" formControlName="numerocinque">
-   <input class="form-control" type="number" placeholder="Utenze SET-DIC" formControlName="numerosei">
-   <input type="submit" value="Invia"> <br>
-
-   <input class="form-control" type="number" placeholder="Web/telefono GEN-APR" formControlName="numerosette">
-   <input class="form-control" type="number" placeholder="Web/telefono MAG-AGO" formControlName="numerootto">
-   <input class="form-control" type="number" placeholder="Web/telefono SET-DIC" formControlName="numeronove">
+   <h2>Utenze</h2>
+   <input class="form-control" type="number" placeholder="UGEN-APR" formControlName="numeroquattro">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numerocinque">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numerosei">
+   <br>
+   <h2>Web/telefono</h2>
+   <input class="form-control" type="number" placeholder=" GEN-APR" formControlName="numerosette">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numerootto">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numeronove">
    <br>  
-   <input class="form-control" type="number" placeholder="sucerity GEN-APR" formControlName="numerodieci">
-   <input class="form-control" type="number" placeholder="security MAG-AGO" formControlName="numeroundici">
-   <input class="form-control" type="number" placeholder="security SET-DIC" formControlName="numerododici">
-  
+   <h2>Security</h2>
+   <input class="form-control" type="number" placeholder=" GEN-APR" formControlName="numerodieci">
+   <input class="form-control" type="number" placeholder=" MAG-AGO" formControlName="numeroundici">
+   <input class="form-control" type="number" placeholder=" SET-DIC" formControlName="numerododici">
+   <br>
+   <input type="submit" value="Invia"> 
    
 </form>
 
 
 
-<p> Totale spese </p>
+<H3>TOTALE SPESE</H3>
 {{totalespese ==0 ? 'Inserisci un valore' :totalespese}}
 
 </div>
