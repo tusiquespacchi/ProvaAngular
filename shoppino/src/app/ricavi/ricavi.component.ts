@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+
+
 import { Employee } from '../employee.model';
 
 
@@ -12,12 +14,14 @@ import { Employee } from '../employee.model';
 export class RicaviComponent implements OnInit {
 
 users: Employee[] = new Array();
-  
+ficco: Employee[] = (new Array()); 
 
   constructor(public http: HttpClient) { }
 
   ngOnInit(): void {
     this.loadUser();
+    
+    
     
       
   }
@@ -29,8 +33,21 @@ users: Employee[] = new Array();
   });
 
   
+  
+
+  
 }
 
 
-}
 
+createUser(id: number, userId: number, title: string, body: string){
+this.http.post("https://jsonplaceholder.typicode.com", {
+id: id,
+userId: userId,
+title: title,
+body: body
+}).subscribe(res => {
+console.log(res);
+})
+}
+}
