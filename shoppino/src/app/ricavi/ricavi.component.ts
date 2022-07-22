@@ -1,5 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../employee.model';
+
+
 
 @Component({
   selector: 'app-ricavi',
@@ -8,17 +11,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RicaviComponent implements OnInit {
 
+users: Employee[] = new Array();
+  
+
   constructor(public http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadUser()
+    this.loadUser();
+    
       
   }
  loadUser(): void{
-  this.http.get('https://jsonplaceholder.typicode.com/posts?request=episodes&username=Nothing00').subscribe(res => {
+  this.http.get<Employee[]>('https://jsonplaceholder.typicode.com/posts?id=1').subscribe(res => {
     console.log(res);
+    this.users = res;
+    
   });
+
+  
 }
 
 
 }
+
